@@ -7,7 +7,8 @@ export const { css, styled, theme } = createStitches({
       gray: '#2D2D2D',
       lightGray: '#515151',
       withe: '#fff',
-      light: 'rgba(255, 255, 255, 0.34)'
+      light: 'rgba(255, 255, 255, 0.34)',
+      darkYellow: '#756322'
     }
   },
   media: {

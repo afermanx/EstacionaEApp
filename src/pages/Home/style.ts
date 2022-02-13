@@ -19,20 +19,3 @@ export const Title = styled('h1', {
   color: colors.gray,
 })
 
-export const SubTitle = styled('h2', {
-  fontSize: '1.3em',
-  color: colors.withe,
-  textTransform: 'uppercase',
-  fontWeight: 'normal',
-  textAlign: 'center',
-  marginTop: '15px',
-  marginBottom: '5px'
-})
-
-export const Line = styled('div', {
-  width: '90%',
-  height: '1px',
-  backgroundColor: colors.light,
-  margin: 'auto'
-})
-

@@ -13,10 +13,8 @@ export default function Home() {
           <S.Title>EstacionaÊ</S.Title>
         </S.HeaderContainer>
       </Header>
-      <Section>
+      <Section title='ESTACIONAMENTOS DISPONÍVEIS'>
         <div>
-          <S.SubTitle>ESTACIONAMENTOS DISPONÍVEIS</S.SubTitle>
-          <S.Line />
           <ParkingLots />
         </div>
       </Section>

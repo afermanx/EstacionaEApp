@@ -11,7 +11,7 @@ export const ParkingsContainer = styled('div', {
 
 export const Parking = styled('div', {
   display: 'flex',
-  backgroundColor: colors.light,
+  backgroundColor: colors.lightGray,
   width: '90%',
   padding: '13px 10px',
   borderRadius: '10px',
