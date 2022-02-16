@@ -1,3 +1,5 @@
+import React from 'react'
+
 import Header from "../../components/Header";
 
 import Return from '../../assets/icons/return.svg'
@@ -10,7 +12,7 @@ import Vacancies from "../../components/Vacancies";
 export default function Parking() {
   const navigate = useNavigate()
   return (
-    <>
+    <section>
       <Header>
         <>
           <S.Icon onClick={() => {
@@ -27,6 +29,6 @@ export default function Parking() {
       <Section title="VAGAS DISPONÍVEIS">
         <Vacancies />
       </Section>
-    </>
+    </section>
   )
 }
