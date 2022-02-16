@@ -12,6 +12,7 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "firebase": "^9.6.6",
+    "howler": "^2.2.3",
     "json-server": "^0.17.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/howler": "^2.2.4"
   }
 }

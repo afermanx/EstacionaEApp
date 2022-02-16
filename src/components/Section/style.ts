@@ -4,7 +4,7 @@ const colors = theme.colors
 
 export const SectionContainer = styled('div', {
   backgroundColor: theme.colors.gray,
-  width: '100%',
+  maxWidth: '100vw',
   variants: {
     size: {
       mobile: {

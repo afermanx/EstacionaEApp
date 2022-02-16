@@ -34,6 +34,7 @@ export default function Vacancies() {
     })
   }
 
+
   return (
     <div>
       <S.Container>
@@ -45,7 +46,7 @@ export default function Vacancies() {
                   <S.ContaierNumber rotate={resp.direction === 'left' ? 'left' : 'right'}>
                     <S.Number rotate={resp.direction === 'left' ? 'left' : 'right'}>{resp.id}</S.Number>
                   </S.ContaierNumber>
-                  <S.IconCar busy={resp.status === 'on' ? 'on' : 'off'} src={resp.direction === 'left' ? LeftCar : RightCar} />
+                  <S.IconCar rotate={resp.direction === 'left' ? 'left' : 'right'} busy={resp.status === 'on' ? 'on' : 'off'} src={resp.direction === 'left' ? LeftCar : RightCar} />
                 </S.Vacancy>
               )
             }
@@ -53,6 +54,7 @@ export default function Vacancies() {
           }
         </S.ContainerVacancies>
       </S.Container>
+
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import { keyframes } from '@stitches/react'
 import { styled, theme } from '../../stitches.config'
 
 const colors = theme.colors
@@ -15,18 +16,42 @@ export const ContainerVacancies = styled('div', {
   padding: '15px'
 })
 
+const carLeft = keyframes({
+  '0%': { transform: 'translateX(-80%) rotateZ(-90deg) translateX(-80px)' },
+  '30%': { transform: 'translateX(-80%) rotateZ(-90deg) translateX(-30px)' },
+  '60%': { transform: 'translateX(-60%) rotateZ(-5deg)' },
+  '100%': { transform: 'translateX(0%)' }
+})
+
+const carRight = keyframes({
+  '0%': { transform: 'translateX(80%) rotateZ(90deg) translateX(80px)' },
+  '30%': { transform: 'translateX(80%) rotateZ(90deg) translateX(30px)' },
+  '60%': { transform: 'translateX(60%) rotateZ(5deg)' },
+  '100%': { transform: 'translateX(0%)' }
+})
+
 export const IconCar = styled('img', {
   width: '80%',
+  zIndex: 20,
   variants: {
     busy: {
       on: {
-        display: 'flex'
+        display: 'flex',
+        animation: `${carRight} 1000ms`
       },
       off: {
-        display: 'none',
+        display: 'none'
+      }
+    },
+    rotate: {
+      left: {
+        animation: `${carLeft} 1000ms`,
+      },
+      right: {
+        animation: `${carRight} 1000ms`,
       }
     }
-  }
+  },
 })
 
 export const ContaierNumber = styled('div', {
