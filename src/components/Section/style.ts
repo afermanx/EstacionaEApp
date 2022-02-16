@@ -4,9 +4,8 @@ const colors = theme.colors
 
 export const SectionContainer = styled('div', {
   backgroundColor: theme.colors.gray,
-  height: "100%",
+  minHeight: "65vh",
   width: '100%',
-  position: 'fixed'
 })
 
 export const SubTitle = styled('h2', {
@@ -15,7 +14,7 @@ export const SubTitle = styled('h2', {
   textTransform: 'uppercase',
   fontWeight: 'normal',
   textAlign: 'center',
-  marginTop: '20px',
+  paddingTop: '20px',
   marginBottom: '5px'
 })
 
