@@ -4,8 +4,19 @@ const colors = theme.colors
 
 export const SectionContainer = styled('div', {
   backgroundColor: theme.colors.gray,
-  minHeight: "65vh",
   width: '100%',
+  variants: {
+    size: {
+      mobile: {
+        position: 'inherit',
+        height: "65vh",
+      },
+      web: {
+        position: 'fixed',
+        height: "100vh",
+      }
+    }
+  }
 })
 
 export const SubTitle = styled('h2', {

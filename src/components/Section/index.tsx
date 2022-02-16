@@ -9,7 +9,7 @@ type Props = {
 export default function Section({ children, title }: Props) {
   return (
     <section>
-      <S.SectionContainer>
+      <S.SectionContainer size={{ '@bp1': 'mobile', '@initial': 'web' }}>
         <S.SubTitle>{title}</S.SubTitle>
         <S.Line />
         {children}

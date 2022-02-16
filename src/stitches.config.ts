@@ -12,7 +12,6 @@ export const { css, styled, theme } = createStitches({
     }
   },
   media: {
-    bp1: '(max-width: 400px)',
-    bp2: '(min-width: 400px)',
+    bp1: '(max-width: 600px)',
   }
 })
