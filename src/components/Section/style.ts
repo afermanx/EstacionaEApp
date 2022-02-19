@@ -12,7 +12,7 @@ export const SectionContainer = styled('div', {
         height: "65vh",
       },
       web: {
-        position: 'fixed',
+        position: 'inerit',
         height: "100vh",
       }
     }

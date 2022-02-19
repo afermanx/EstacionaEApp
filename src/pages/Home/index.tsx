@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header>
         <S.HeaderContainer>
-          <S.Image src={Logo} alt="" />
+          <S.Image src={Logo} alt="" size={{ '@bp1': 'mobile', '@initial': 'web' }} />
           <S.Title>EstacionaÊ</S.Title>
         </S.HeaderContainer>
       </Header>

@@ -5,15 +5,34 @@ const colors = theme.colors
 
 export const Container = styled('div', {
   backgroundColor: colors.withe,
-  width: '80%',
   margin: '40px auto 0 auto',
+  variants: {
+    size: {
+      mobile: {
+        width: '80%',
+      },
+      web: {
+        width: '30%',
+      }
+    }
+  }
 })
 
 export const ContainerVacancies = styled('div', {
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'center',
-  padding: '15px'
+  padding: '15px',
+  variants: {
+    size: {
+      mobile: {
+      },
+      web: {
+        width: '400px',
+        margin: 'auto'
+      }
+    }
+  }
 })
 
 const carLeft = keyframes({
@@ -37,7 +56,6 @@ export const IconCar = styled('img', {
     busy: {
       on: {
         display: 'flex',
-        animation: `${carRight} 1000ms`
       },
       off: {
         display: 'none'
@@ -85,7 +103,6 @@ export const Number = styled('p', {
 
 export const Vacancy = styled('div', {
   position: 'relative',
-  width: '40%',
   height: '60px',
   alignItems: 'center',
   display: 'flex',
@@ -102,6 +119,14 @@ export const Vacancy = styled('div', {
         borderTop: `1px dashed ${colors.gray}`,
         borderLeft: `1px dashed ${colors.gray}`,
         borderBottom: `1px dashed ${colors.gray}`,
+      }
+    },
+    size: {
+      mobile: {
+        width: '40%',
+      },
+      web: {
+        width: '150px',
       }
     }
   }

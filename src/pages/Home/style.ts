@@ -11,7 +11,16 @@ export const HeaderContainer = styled('div', {
 })
 
 export const Image = styled('img', {
-  width: '65%',
+  variants: {
+    size: {
+      mobile: {
+        width: '65%',
+      },
+      web: {
+        width: 'auto',
+      }
+    }
+  }
 })
 
 export const Title = styled('h1', {

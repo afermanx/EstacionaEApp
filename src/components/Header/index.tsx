@@ -9,7 +9,7 @@ type Props = {
 export default function Header({ children }: Props) {
   return (
     <header>
-      <S.HeaderContainer>
+      <S.HeaderContainer size={{ '@bp1': 'mobile', '@initial': 'web' }}>
         {children}
       </S.HeaderContainer>
     </header>

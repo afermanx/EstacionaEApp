@@ -34,15 +34,16 @@ export default function Vacancies() {
     })
   }
 
+  console.log(vacancies)
 
   return (
     <div>
-      <S.Container>
-        <S.ContainerVacancies>
+      <S.Container size={{ '@bp1': 'mobile', '@initial': 'web' }}>
+        <S.ContainerVacancies size={{ '@bp1': 'mobile', '@initial': 'web' }}>
           {
             vacancies?.map((resp: Vacancie, index: any) => {
               return (
-                <S.Vacancy key={index} rotate={resp.direction === 'left' ? 'left' : 'right'}>
+                <S.Vacancy key={index} rotate={resp.direction === 'left' ? 'left' : 'right'} size={{ '@bp1': 'mobile', '@initial': 'web' }}>
                   <S.ContaierNumber rotate={resp.direction === 'left' ? 'left' : 'right'}>
                     <S.Number rotate={resp.direction === 'left' ? 'left' : 'right'}>{resp.id}</S.Number>
                   </S.ContaierNumber>
