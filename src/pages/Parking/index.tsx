@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import Header from "../../components/Header";
 
@@ -8,11 +8,16 @@ import * as S from './style'
 import Section from "../../components/Section";
 import { useNavigate } from "react-router-dom";
 import Vacancies from "../../components/Vacancies";
+import Loading from '../../components/Loading';
+import AppContext from '../../context/AppContext';
 
 export default function Parking() {
+  const { loading } = useContext(AppContext)
+
   const navigate = useNavigate()
   return (
     <section>
+      <Loading loading={loading} />
       <Header>
         <>
           <S.Icon onClick={() => {

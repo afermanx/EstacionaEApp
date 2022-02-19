@@ -6,6 +6,7 @@ export const HeaderContainer = styled('div', {
     size: {
       mobile: {
         height: 'auto',
+        minHeight: '35vh'
       },
       web: {
         maxHeight: "100vh",

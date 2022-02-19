@@ -18,14 +18,29 @@ export const Container = styled('div', {
   }
 })
 
+export const VacanciesHeader = styled('div', {
+  width: '90%',
+  margin: 'auto',
+  display: 'flex',
+  padding: '15px 0',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+})
+
+export const TextVacanties = styled('p', {
+  fontWeight: 800,
+  color: colors.lightGray,
+})
+
 export const ContainerVacancies = styled('div', {
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'center',
-  padding: '15px',
+  padding: '0 15px 15px 15px',
   variants: {
     size: {
       mobile: {
+        width: 'auto'
       },
       web: {
         width: '400px',

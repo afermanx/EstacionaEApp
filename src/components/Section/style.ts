@@ -4,16 +4,19 @@ const colors = theme.colors
 
 export const SectionContainer = styled('div', {
   backgroundColor: theme.colors.gray,
-  maxWidth: '100vw',
+  position: 'relative',
   variants: {
     size: {
       mobile: {
         position: 'inherit',
         height: "65vh",
+        minHeight: "65vh",
       },
       web: {
         position: 'inerit',
         height: "100vh",
+        minHeight: "100vh",
+        maxWidth: '100%'
       }
     }
   }
